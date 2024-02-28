@@ -219,4 +219,4 @@ async def feedback(ctx):
 
 
 # Run the bot with your Discord bot token
-bot.run('MTIwODUxNzcwNDMzMjM1MzYwNw.GEgl2a.OFF4ef8cRWaRVqYzY5xa9vgppRbYHdF7_aPsoE')
+bot.run('')
