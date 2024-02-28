@@ -1,0 +1,20 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="main.coffee" />
+          <option value="main.*" />
+          <option value="SavingsAccount.SavingsAccount" />
+          <option value="SavingsAccount.accountNumber" />
+          <option value="SavingsAccount.self" />
+          <option value="SavingsAccount.MaturityDate" />
+          <option value="SavingsAccount.interestRate" />
+          <option value="Main.SavingsAccount" />
+          <option value="SavingsAccount" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
