@@ -39,6 +39,8 @@ async def on_message(message):
         await greet(message.channel)
         await message.channel.send("I am RadarBot, the Radar Estate Chatbot.")
         await message.channel.send("I can help you find properties based on your preferences.")
+        await message.channel.send("To chat with the chatbot type in (find me a property,show me some properties,search properties, list properties)")
+
 
     elif any(keyword in message.content.lower() for keyword in PROPERTY_REQUESTS):
         await find_property(message.channel, message.author)
@@ -51,7 +53,7 @@ async def on_message(message):
 # Define a command to greet users
 @bot.command()
 async def greet(ctx):
-    greetings = ['Hi!', 'Hello!', 'Hey there!',"Howdy","Greetings","sup"]
+    greetings = ['Hi!', 'Hello!', 'Hey there!',"Good day sir/ma","Greetings","Dear sir/ma","Salutations"]
     await ctx.send(random.choice(greetings))
 
 # Define a command to assist users
@@ -219,4 +221,4 @@ async def feedback(ctx):
 
 
 # Run the bot with your Discord bot token
-bot.run('')
+bot.run('MTIwODUxNzcwNDMzMjM1MzYwNw.GEgl2a.OFF4ef8cRWaRVqYzY5xa9vgppRbYHdF7_aPsoE')
