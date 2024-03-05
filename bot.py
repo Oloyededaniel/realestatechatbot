@@ -219,6 +219,5 @@ async def feedback(ctx):
     await ctx.send("Thank you for your feedback!")
 
 
-
 # Run the bot with your Discord bot token
 bot.run('MTIwODUxNzcwNDMzMjM1MzYwNw.GEgl2a.OFF4ef8cRWaRVqYzY5xa9vgppRbYHdF7_aPsoE')
