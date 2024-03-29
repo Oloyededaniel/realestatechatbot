@@ -558,6 +558,20 @@
       "maintenance": 652,
       "parking": 3,
       "construction": ["garage", "landry"]
+    },
+    {
+      "id": "949393236260",
+      "area": "Ontario",
+      "address": "230 Highland RD W Kitchener, Ontario  ON N2M3C2",
+      "city": "Kitchener",
+      "type": "Single Family",
+      "floorspace": 3400,
+      "beds": 5,
+      "baths": 4,
+      "price": 1168000,
+      "maintenance": 562.22,
+      "parking": 3,
+      "construction": ["garage", "landry", "Air conditioner"]
     }
   ]
 }
