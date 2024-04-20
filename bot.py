@@ -67,17 +67,8 @@ async def on_message(message):
                                    "Ratings(Feedback), Schedule an Appointment, Assist me, How do i make Payments(For "
                                    "Payments))")
 
-    elif contains_keywords(message.content, User_feedback):
-        await feedback(message)
-
-    elif contains_keywords(message.content, PROPERTY_REQUESTS):
-        await find_property(message.channel, message.author)
-
-    elif contains_keywords(message.content, PROPERTY_TAX):
-        await calculate_property_tax(message.channel, message.author)
-
-    elif contains_keywords(message.content, LEGAL):
-        await legal_aspects(message.channel, message.author)
+    elif contains_keywords(message.content, ASSIST):
+        await assist(message.channel)
 
     elif contains_keywords(message.content, COMPANY_INFO_KEYWORDS):
         await company_info(message.channel)
@@ -91,8 +82,17 @@ async def on_message(message):
     elif contains_keywords(message.content, SCHEDULE_APPOINTMENT_KEYWORDS):
         await schedule_appointment(message.channel)
 
-    elif contains_keywords(message.content, ASSIST):
-        await assist(message.channel)
+    elif contains_keywords(message.content, PROPERTY_REQUESTS):
+        await find_property(message.channel, message.author)
+
+    elif contains_keywords(message.content, PROPERTY_TAX):
+        await calculate_property_tax(message.channel, message.author)
+
+    elif contains_keywords(message.content, LEGAL):
+        await legal_aspects(message.channel, message.author)
+
+    elif contains_keywords(message.content, User_feedback):
+        await feedback(message)
 
     elif contains_keywords(message.content, THANKS):
         await thanks(message.channel)
@@ -112,8 +112,8 @@ async def greet(ctx):
 async def assist(ctx):
     await ctx.send("I'm here to assist you in finding properties based on your preferences. "
                    "You can ask me to find properties, provide company information, office hours, payment "
-                   "information,Property search"
-                   "or schedule an appointment. Feel free to explore the available commands!")
+                   "information, Property search, Company info, Provincial rates, Payment "
+                   "or schedule an appointment")
 
 # Define a command for user's thank you message
 @bot.command()
